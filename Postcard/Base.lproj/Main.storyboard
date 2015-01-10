@@ -38,15 +38,6 @@
                                     <rect key="frame" x="21" y="318" width="330" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV8-RT-P1b">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="27" y="81" width="319" height="68"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzf-Qk-qHp">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.86524529169999997" green="1" blue="0.89104385419999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -61,6 +52,23 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4JJ-mb-O2f"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelForName" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDT-Hp-uJD">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="90" width="169" height="21"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelForMessge" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV8-RT-P1b">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="119" width="319" height="68"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -68,8 +76,9 @@
                                 <exclude reference="cZs-zs-T8x"/>
                                 <exclude reference="cw7-7l-DVP"/>
                                 <exclude reference="mBx-b0-9ak"/>
-                                <exclude reference="cV8-RT-P1b"/>
                                 <exclude reference="hzf-Qk-qHp"/>
+                                <exclude reference="YDT-Hp-uJD"/>
+                                <exclude reference="cV8-RT-P1b"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -77,8 +86,9 @@
                                 <include reference="cZs-zs-T8x"/>
                                 <include reference="cw7-7l-DVP"/>
                                 <include reference="mBx-b0-9ak"/>
-                                <include reference="cV8-RT-P1b"/>
                                 <include reference="hzf-Qk-qHp"/>
+                                <include reference="YDT-Hp-uJD"/>
+                                <include reference="cV8-RT-P1b"/>
                             </mask>
                         </variation>
                     </view>
@@ -87,6 +97,7 @@
                         <outlet property="enterNameTextField" destination="cw7-7l-DVP" id="416-7w-emb"/>
                         <outlet property="mailButton" destination="hzf-Qk-qHp" id="hW4-42-Zdr"/>
                         <outlet property="messagelabel" destination="cV8-RT-P1b" id="QEF-sz-tlz"/>
+                        <outlet property="nameLabel" destination="YDT-Hp-uJD" id="Xkv-0I-GAD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,6 +113,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aic-7M-fJE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LCy-jv-hWF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="9KT-yN-5xh">
