@@ -27,6 +27,7 @@ class ViewController: UIViewController {
 
     @IBAction func sendMailButtonPressed(sender: UIButton) {
         
+        //Get the test field
         messagelabel.text = enterNameTextField.text
         messagelabel.hidden = false
         mailButton.setTitle("Lalalla", forState: UIControlState.Normal)
